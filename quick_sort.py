@@ -6,6 +6,3 @@ def quick_sort(my_list):
         left = quick_sort([i for i in my_list[1:] if i < pivot])
         right = quick_sort([j for j in my_list[1:] if j > pivot])
         return left + [pivot] + right
-
-
-print quick_sort([5, 1, 8, 2, 7])
